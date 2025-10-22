@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- =========================================================
+  🧭 MASTER-VORLAGE FÜR FUHRMANNS-HOF-WEBSITE
+  =========================================================
+  Diese Datei dient als Grundgerüst für alle Unterseiten
+  (z. B. „geschichte.html“, „kontakt.html“, „impressum.html“).
+
+  💡 Verwendung:
+  1. Diese Datei niemals direkt veröffentlichen!
+  2. Kopiere sie und benenne sie um (z. B. „kontakt.html“).
+  3. Ändere nur die markierten Bereiche (✏️).
+  4. Bewahre diese Datei als stabile Vorlage auf.
+
+  ⚙️ Enthalten:
+  - Dynamisch geladene Navigation (nav.html via script.js)
+  - Fallback für deaktiviertes JavaScript
+  - Milchige Inhaltsbox („.welcome“)
+  - Automatischer Weihnachtsmarkt-Hinweis
+  - Hintergrund „gebaeude_watercolor.webp“
+  - Lokale Schrift „Berkshire Swash“
+  - Fixierter Hintergrund für iOS / iPadOS / macOS / Android
+
+  📁 Empfohlene Ordnerstruktur:
+      /index.html
+      /geschichte.html
+      /kontakt.html
+      /impressum.html
+      /datenschutz.html
+      /nav.html
+      /style.css
+      /script.js
+      /images/
+      /fonts/
+      /_vorlage.html   ← diese Datei (nicht hochladen)
+
+  ✏️Letzte Aktualisierung: 2025-10-20
+========================================================= -->
+
+<html lang="de">
+<head>
+  <!-- ✏️ ==========================================
+       SEITENTITEL UND META-ANGABEN ANPASSEN
+       ========================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TITEL DIESER SEITE</title>
+  <meta name="description" content="KURZE BESCHREIBUNG DIESER SEITE">
+  <link rel="stylesheet" href="/fuhrmanns-hof-webseite/style.css">
+</head>
+
+<body>
+
+  <!-- 🏞️ ==========================================
+       FIXIERTER HINTERGRUND (iOS-kompatibel)
+       ========================================== -->
+  <div class="bg"></div>
+
+  <!-- 🌐 ==========================================
+       NAVIGATION
+       ========================================== -->
+  <!-- Fallback-Navigation für Besucher ohne JavaScript -->
+  <noscript>
+    <nav class="navbar">
+      <div class="nav-inner">
+        <a href="index.html">Startseite</a>
+        <a href="geschichte.html">Geschichte</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </nav>
+  </noscript>
+
+  <!-- Platzhalter für dynamische Navigation -->
+  <div id="nav-placeholder"></div>
+
+  <!-- 🕯️ ==========================================
+       Automatischer Weihnachtsmarkt-Hinweis
+       ========================================== -->
+  <div id="announcement" class="announcement"></div>
+
+  <noscript>
+    <div class="announcement" style="display:block;">
+      🎄✨ Am 4. Advent findet ein historischer Weihnachtsmarkt in Fuhrmanns Hof statt 🕯️❄️
+    </div>
+  </noscript>
+
+  <!-- ✏️ ==========================================
+       HAUPTINHALT DIESER SEITE
+       ========================================== -->
+  <div class="welcome">
+    <h1>SEITENÜBERSCHRIFT HIER</h1>
+    <p>➡️ Hier kommt der Textinhalt dieser Seite hinein. Du kannst Überschriften (<code>&lt;h2&gt;</code>), Absätze (<code>&lt;p&gt;</code>) und Bilder hinzufügen.</p>
+
+    <!-- 📸 Beispiel: Bild mit Untertitel -->
+    <!--
+    <figure>
+      <img src="images/geschichte/beispiel.jpg" alt="Beschreibung des Bildes" style="max-width:100%;border-radius:8px;">
+      <figcaption style="font-size:0.9rem;color:#555;text-align:center;">Historische Aufnahme des Hofes um 1930</figcaption>
+    </figure>
+    -->
+  </div>
+
+  <!-- ⚙️ ==========================================
+       ZENTRALES SCRIPT (Navigation & Banner)
+       ========================================== -->
+  <script src="/fuhrmanns-hof-webseite/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browser-Diagnose – Fuhrmanns Hof</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Milchglas-Box */
+    .debug-box {
+      background: rgba(255, 255, 255, 0.75);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      max-width: 850px;
+      margin: 4rem auto;
+      padding: 2rem 3rem;
+      text-align: left;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      color: #38322e;
+      line-height: 1.6;
+      backdrop-filter: blur(6px);
+      border: 2px solid rgba(181, 123, 46, 0.4);
+    }
+
+    .debug-box h1 {
+      font-family: 'BerkshireSwash', Georgia, serif;
+      text-align: center;
+      color: #8b3a00;
+      font-size: 2.2rem;
+      margin-top: 0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 0.5rem 0;
+      padding: 0.3rem 0.6rem;
+      background: rgba(255,250,235,0.7);
+      border-radius: 6px;
+    }
+
+    code {
+      background: #f1ece2;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+
+    .warn {
+      background: #fff0e0;
+      border-left: 4px solid #b57b2e;
+      padding: 1rem;
+      margin-top: 1.5rem;
+      border-radius: 6px;
+      font-weight: 500;
+      color: #8b3a00;
+    }
+
+    @media (max-width: 768px) {
+      .debug-box {
+        padding: 1.5rem;
+        margin: 2rem 1rem;
+      }
+      .debug-box h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html">Startseite</a>
+      <a href="geschichte.html">Geschichte</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+  </nav>
+
+  <div class="debug-box" id="info">
+    <h1>🔍 Browser-Diagnose</h1>
+    <p>Ermittle Browserdaten …</p>
+  </div>
+
+  <script>
+    const infoBox = document.getElementById('info');
+    const ua = navigator.userAgent;
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    const dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const touch = 'ontouchstart' in window;
+    const isIOS = /iPad|iPhone|iPod/.test(ua);
+    const isIPadOS = (navigator.platform === 'MacIntel' && touch);
+    const isAndroid = /Android/.test(ua);
+    const isSafari = /^((?!chrome|android).)*safari/i.test(ua);
+    const isFixedWorking = CSS.supports('background-attachment: fixed');
+
+    let html = `
+      <p><strong>📱 Gerätedaten</strong></p>
+      <ul>
+        <li><b>User-Agent:</b> <code>${ua}</code></li>
+        <li><b>Viewport:</b> ${width} × ${height} px</li>
+        <li><b>Touch-Unterstützung:</b> ${touch ? '✅ ja' : '❌ nein'}</li>
+        <li><b>Dark-Mode gemeldet:</b> ${dark ? '🌑 aktiv' : '☀️ hell'}</li>
+        <li><b>iOS erkannt:</b> ${isIOS ? '✅' : '❌'}</li>
+        <li><b>iPadOS erkannt:</b> ${isIPadOS ? '✅' : '❌'}</li>
+        <li><b>Android erkannt:</b> ${isAndroid ? '✅' : '❌'}</li>
+        <li><b>Safari erkannt:</b> ${isSafari ? '✅' : '❌'}</li>
+        <li><b><code>background-attachment: fixed</code> Unterstützung:</b> ${isFixedWorking ? '✅ ja' : '⚠️ eingeschränkt'}</li>
+      </ul>
+    `;
+
+    if (isIPadOS && dark) {
+      html += `<div class="warn">⚠️ Dieses iPad meldet <b>Dark Mode aktiv</b>, 
+      obwohl Safari vermutlich hell angezeigt wird.  
+      (Bekanntes iPadOS-Phantomverhalten.)</div>`;
+    }
+
+    html += `<p style="margin-top:1rem;">🔧 
+      <i>Hinweis:</i> Wenn du hier nach unten scrollst, siehst du, ob das 
+      Hintergrundbild der Seite <code>gebaeude_watercolor.webp</code> fixiert bleibt 
+      oder mitscrollt.  
+      Das zeigt dir, ob <code>background-attachment: fixed</code> korrekt funktioniert.</p>`;
+
+    infoBox.innerHTML = html;
+  </script>
+</body>
+</html>

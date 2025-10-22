@@ -1,0 +1,24 @@
+{
+  "name": "fuhrmanns-hof-webseite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuhrmanns-hof/fuhrmanns-hof-webseite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/fuhrmanns-hof/fuhrmanns-hof-webseite/issues"
+  },
+  "homepage": "https://github.com/fuhrmanns-hof/fuhrmanns-hof-webseite#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
