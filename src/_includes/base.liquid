@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">
-  <link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="{{ '/style.css' | url }}">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
 {% if page.url == "/" or page.url == "/index/" or page.url == "/index.html" or page.filePathStem == "/src/index" %}
   <div class="announcement">
     🎄✨ Am Wochenende des 4. Advents findet in Querfurt der <strong>Weihnachtszauber</strong> statt.  
-    Auch der <strong>Fuhrmanns Hof</strong> öffnet seine Tore und ist Teil des festlichen Geschehens rund um Markt und Altstadt. 🕯️❄️
+    Auch der <strong>Fuhrmanns Hof</strong> öffnet seine Tore (am Freitag und Samstag) und ist Teil des festlichen Geschehens rund um Markt und Altstadt. 🕯️❄️
   </div>
 {% endif %}
 
