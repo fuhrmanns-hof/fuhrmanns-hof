@@ -12,6 +12,7 @@ export default function(eleventyConfig) {
   // 1. Statische Dateien (werden unverändert kopiert)
   eleventyConfig.addPassthroughCopy("src/style.css");
   eleventyConfig.addPassthroughCopy("src/fonts");
+  eleventyConfig.addPassthroughCopy("src/images");
 
   // 2. BrowserSync beim Testen
   eleventyConfig.setBrowserSyncConfig({
