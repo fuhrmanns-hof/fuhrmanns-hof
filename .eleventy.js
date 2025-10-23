@@ -1,18 +1,19 @@
 // ===============================================
 //  Eleventy Konfiguration für Fuhrmanns Hof Seite
 // ===============================================
+
 console.log("✅ Eleventy-Konfiguration wurde geladen");
+
+// Umgebung erkennen: lokal oder GitHub Pages
+const isGitHub = process.env.ELEVENTY_ENV === "github";
 
 export default function(eleventyConfig) {
   
   // 1. Statische Dateien (werden unverändert kopiert)
   eleventyConfig.addPassthroughCopy("src/style.css");
   eleventyConfig.addPassthroughCopy("src/fonts");
-  eleventyConfig.addPassthroughCopy("src/images");
-  eleventyConfig.addPassthroughCopy("src/scriptA.js");
-  eleventyConfig.addPassthroughCopy("src/scriptB.js");
 
-  // 2. Browser-Cache beim Testen etwas umgehen
+  // 2. BrowserSync beim Testen
   eleventyConfig.setBrowserSyncConfig({
     files: ['_site/**/*'],
     notify: true,
@@ -20,23 +21,23 @@ export default function(eleventyConfig) {
     cors: true
   });
 
-  // 🪄 2.5. Sichtbares Logging bei jeder Dateiänderung
+  // 3. Logging bei Dateiänderungen
   eleventyConfig.on("watchChange", (changedFile) => {
     console.log(`[11ty Watch] Datei geändert: ${changedFile}`);
-
-  // Erzwingt das Beobachten von style.css
-  eleventyConfig.addWatchTarget("src/style.css");
   });
 
-  // 3. Standard-Einstellungen
+  // 4. CSS-Watching
+  eleventyConfig.addWatchTarget("src/style.css");
+
+  // 5. Standard-Einstellungen (mit Umgebungslogik)
   return {
     dir: {
-      input: "src",      // Quelldateien
-      includes: "_includes", // enthält base.liquid, nav.html, footer.html
-      output: "_site"    // Zielverzeichnis (wird automatisch generiert)
+      input: "src",
+      output: isGitHub ? "docs" : "_site"  // -> automatisch je nach Umgebung
     },
-    htmlTemplateEngine: "liquid", // einfache Template-Syntax
+    htmlTemplateEngine: "liquid",
     markdownTemplateEngine: "liquid",
-    templateFormats: ["html", "liquid"]
+    templateFormats: ["html", "liquid"],
+    pathPrefix: isGitHub ? "/fuhrmanns-hof/" : "/" // -> korrekt für GitHub Pages oder lokal
   };
 }

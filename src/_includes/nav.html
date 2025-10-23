@@ -3,8 +3,8 @@
      ========================================== -->
 <nav class="navbar">
   <div class="nav-inner">
-    <a href="/" {% if page.url == "/" or page.url == "/index/" %}class="active"{% endif %}>Startseite</a>
-    <a href="/geschichte/" {% if page.url contains "/geschichte/" %}class="active"{% endif %}>Geschichte</a>
-    <a href="/galerie/" {% if page.url contains "/galerie/" %}class="active"{% endif %}>Galerie</a>
+    <a href="{{ '/' | url }}" {% if page.url == "/" or page.url == "/index/" %}class="active"{% endif %}>Startseite</a>
+    <a href="{{ '/geschichte/' | url }}" {% if page.url contains '/geschichte/' %}class="active"{% endif %}>Geschichte</a>
+    <a href="{{ '/galerie/' | url }}" {% if page.url contains '/galerie/' %}class="active"{% endif %}>Galerie</a>
   </div>
 </nav>

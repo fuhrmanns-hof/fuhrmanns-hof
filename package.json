@@ -1,23 +1,18 @@
 {
   "name": "fuhrmanns-hof-webseite",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "Statische Website für Fuhrmanns Hof Querfurt, erstellt mit Eleventy.",
+  "type": "module",
+  "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fuhrmanns-hof/fuhrmanns-hof-webseite.git"
+    "url": "https://github.com/fuhrmanns-hof/fuhrmanns-hof.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
-  "bugs": {
-    "url": "https://github.com/fuhrmanns-hof/fuhrmanns-hof-webseite/issues"
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
+    "build:pages": "ELEVENTY_ENV=github npx @11ty/eleventy --output=docs"
   },
-  "homepage": "https://github.com/fuhrmanns-hof/fuhrmanns-hof-webseite#readme",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2"
   }

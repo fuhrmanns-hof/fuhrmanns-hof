@@ -1,10 +1,10 @@
 /* ==============================================
-   1. Schriftart Berkshire Swash
+   1. Schriftart Hinweisbox
    ============================================== */
 @font-face {
-  font-family: 'BerkshireSwash';
-  src: url('fonts/BerkshireSwash-Regular.woff2') format('woff2'),
-       url('fonts/BerkshireSwash-Regular.ttf') format('truetype');
+  font-family: 'Quintessential-Regular';
+  src: url('fonts/Quintessential-Regular.woff2') format('woff2'),
+       url('fonts/Quintessential-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -130,7 +130,7 @@ body::before {
   max-width: 900px;
   margin: 0rem auto 0.1rem auto;
   text-align: center;
-  font-family: 'BerkshireSwash', Georgia, serif;
+  font-family: 'Quintessential-Regular', Georgia, serif;
   font-size: 1.5rem;
   color: #840202;
   letter-spacing: 0.02em;
