@@ -1,107 +1,162 @@
 ---
 layout: base.liquid
 title: "Galerie – Fuhrmanns Hof Querfurt"
-description: "Bildergalerie mit Impressionen aus dem denkmalgeschützten Fuhrmanns Hof in Querfurt."
+description: "Veranstaltungs-Galerie des Fuhrmanns Hof Querfurt – Bilder von Märkten und weihnachtlichen Momenten."
 permalink: /galerie/
 ---
 
-<div class="welcome">
-  <h1>Galerie</h1>
-  <p>Ein Blick in und um den <strong>Fuhrmanns Hof Querfurt</strong> – historische Ansichten, liebevolle Details und Momente der Geschichte.</p>
-</div>
+<div class="gallery-layout">
+  <!-- Seitenleiste -->
+  <aside class="gallery-sidebar">
+    <h2>Veranstaltungen</h2>
+    <ul>
+      <li><a href="#weihnachten-2022">Weihnachtszauber 2022</a></li>
+      <li><a href="#weihnachten-2023">Weihnachten 2023</a></li>
+      <li><a href="#herbstmarkt-2024">Herbstmarkt 2024</a></li>
+      <li><a href="#weihnachten-2024">Weihnachtszauber 2024</a></li>
+      <li><a href="#herbstmarkt-2025">Herbstmarkt 2025</a></li>
+      <li><a href="#weihnachten-2025">Weihnachtszauber 2025</a></li>
+    </ul>
+  </aside>
 
-<section class="gallery">
-  <a href="#img1">
-    <figure>
-      <img src="{{ '/images/galerie/01.webp' | url }}" alt="Winterlich erleuchtetes Schaufenster des Fuhrmanns Hofs – ein Blick in die festliche Auslage am Markt 14.">
-      <figcaption>Winterlich erleuchtetes Schaufenster des Fuhrmanns Hofs – ein Blick in die festliche Auslage am Markt 14.</figcaption>
-    </figure>
-  </a>
-  <a href="#img2">
-    <figure>
-      <img src="{{ '/images/galerie/02.webp' | url }}" alt="Historische Fassade des ehemaligen Ladens „Hugo Fuhrmann“ – warmes Licht in der Adventszeit.">
-      <figcaption>Historische Fassade des ehemaligen Ladens „Hugo Fuhrmann“ – warmes Licht in der Adventszeit.</figcaption>
-    </figure>
-  </a>
-  <a href="#img3">
-    <figure>
-      <img src="{{ '/images/galerie/03.webp' | url }}" alt="Detailansicht der Fensterfront – Handwerk, Geschichte und Lichterglanz.">
-      <figcaption>Detailansicht der Fensterfront – Handwerk, Geschichte und Lichterglanz.</figcaption>
-    </figure>
-  </a>
-  <a href="#img4">
-    <figure>
-      <img src="{{ '/images/galerie/04.webp' | url }}" alt="Das festlich dekorierte Schaufenster erinnert an vergangene Zeiten und weihnachtliche Traditionen.">
-      <figcaption>Das festlich dekorierte Schaufenster erinnert an vergangene Zeiten und weihnachtliche Traditionen.</figcaption>
-    </figure>
-  </a>
-  <a href="#img5">
-    <figure>
-      <img src="{{ '/images/galerie/05.webp' | url }}" alt="Historische Registrierkasse im ehemaligen Verkaufsraum – Zeugin aus der Ära Hugo Fuhrmanns.">
-      <figcaption>Historische Registrierkasse im ehemaligen Verkaufsraum – Zeugin aus der Ära Hugo Fuhrmanns.</figcaption>
-    </figure>
-  </a>
-  <a href="#img6">
-    <figure>
-      <img src="{{ '/images/galerie/06.webp' | url }}" alt="Der Verkaufsraum im Advent – warmes Holz, Glas und Erinnerungen an Handwerkskunst.">
-      <figcaption>Der Verkaufsraum im Advent – warmes Holz, Glas und Erinnerungen an Handwerkskunst.</figcaption>
-    </figure>
-  </a> 
-  <a href="#img7">
-    <figure>
-      <img src="{{ '/images/galerie/07.webp' | url }}" alt="Gewölbekeller des Fuhrmanns Hofs, festlich geschmückt für den Weihnachtszauber.">
-      <figcaption>Gewölbekeller des Fuhrmanns Hofs, festlich geschmückt für den Weihnachtszauber.</figcaption>
-    </figure>
-  </a> 
-  <a href="#img8">
-    <figure>
-      <img src="{{ '/images/galerie/08.webp' | url }}" alt="Der Innenhof bei Abendlicht – historische Mauern, stille Atmosphäre und Lichterketten.">
-      <figcaption>Der Innenhof bei Abendlicht – historische Mauern, stille Atmosphäre und Lichterketten.</figcaption>
-    </figure>
-  </a> 
+  <!-- Hauptinhalt -->
+  <section class="gallery-content">
+    <div class="welcome">
+      <h3>Ein Blick in und um den <strong>Fuhrmanns Hof Querfurt</strong> – Veranstaltungen, Märkte und festliche Momente.</h3>
+    </div>
 
-</section>
+<!-- ===============================================
+     Veranstaltung: Weihnachten 2022
+     =============================================== -->
+<article id="weihnachten-2022">
+  <h2>Weihnachten 2022</h2>
+  <p class="intro">
+    Der Beginn unserer kleinen Tradition: Adventslichter, Glühweinduft und erste weihnachtliche Impressionen im Hof.
+  </p>
 
-<!-- ===============================
-     Lightbox-Overlays
-     =============================== -->
+  <!-- 🔹 Galerie-Vorschau -->
+  <div class="gallery">
+    <!-- Bild 1 -->
+    <a href="#w22-img1">
+      <figure>
+        <img src="{{ '/images/galerie/weihnachten2022/01test.webp' | url }}" alt="Beispielbild Weihnachten 2022">
+        <figcaption>Festliche Beleuchtung im Innenhof</figcaption>
+      </figure>
+    </a>
 
-<div class="lightbox" id="img1">
-  <a href="#_" class="close"></a>
-      <img src="{{ '/images/galerie/01.webp' | url }}" alt="Winterlich erleuchtetes Schaufenster des Fuhrmanns Hofs – ein Blick in die festliche Auslage am Markt 14.">
-</div>
+    <!-- Bild 2 -->
+    <a href="#w22-img2">
+      <figure>
+        <img src="{{ '/images/galerie/weihnachten2022/02test.webp' | url }}" alt="Beispielbild Weihnachten 2022">
+        <figcaption>Festliche Beleuchtung im Innenhof</figcaption>
+      </figure>
+    </a>
 
-<div class="lightbox" id="img2">
-  <a href="#_" class="close"></a>
-      <img src="{{ '/images/galerie/02.webp' | url }}" alt="Historische Fassade des ehemaligen Ladens „Hugo Fuhrmann“ – warmes Licht in der Adventszeit.">
-</div>
+    <!-- Bild 3 -->
+    <a href="#w22-img3">
+      <figure>
+        <img src="{{ '/images/galerie/weihnachten2022/03test.webp' | url }}" alt="Beispielbild Weihnachten 2022">
+        <figcaption>Festliche Beleuchtung im Innenhof</figcaption>
+      </figure>
+    </a>
+  </div>
 
-<div class="lightbox" id="img3">
-  <a href="#_" class="close"></a>
-      <img src="{{ '/images/galerie/03.webp' | url }}" alt="Detailansicht der Fensterfront – Handwerk, Geschichte und Lichterglanz.">
-</div>
+  <!-- 🔹 Lightboxen direkt unter der Galerie -->
+  <div class="lightbox" id="w22-img1">
+    <a href="#_" class="close"></a>
+    <img src="{{ '/images/galerie/weihnachten2022/01test.webp' | url }}" alt="Beispielbild Weihnachten 2022">
+  </div>
 
-<div class="lightbox" id="img4">
-  <a href="#_" class="close"></a>
-      <img src="{{ '/images/galerie/04.webp' | url }}" alt="Das festlich dekorierte Schaufenster erinnert an vergangene Zeiten und weihnachtliche Traditionen.">
-</div>
+  <div class="lightbox" id="w22-img2">
+    <a href="#_" class="close"></a>
+    <img src="{{ '/images/galerie/weihnachten2022/02test.webp' | url }}" alt="Beispielbild Weihnachten 2022">
+  </div>
 
-<div class="lightbox" id="img5">
-  <a href="#_" class="close"></a>
-      <img src="{{ '/images/galerie/05.webp' | url }}" alt="Historische Registrierkasse im ehemaligen Verkaufsraum – Zeugin aus der Ära Hugo Fuhrmanns.">
-</div>
+  <div class="lightbox" id="w22-img3">
+    <a href="#_" class="close"></a>
+    <img src="{{ '/images/galerie/weihnachten2022/03test.webp' | url }}" alt="Beispielbild Weihnachten 2022">
+  </div>
+</article>
 
-<div class="lightbox" id="img6">
-  <a href="#_" class="close"></a>
-      <img src="{{ '/images/galerie/06.webp' | url }}" alt="Der Verkaufsraum im Advent – warmes Holz, Glas und Erinnerungen an Handwerkskunst.">
-</div>
+    <article id="weihnachten-2023">
+      <h2>Weihnachten 2023</h2>
+      <div class="gallery">
+        <!-- deine vorhandenen Weihnachtsbilder 2023 hier einfügen -->
+      </div>
+    </article>
 
-<div class="lightbox" id="img7">
-  <a href="#_" class="close"></a>
-      <img src="{{ '/images/galerie/07.webp' | url }}" alt="Gewölbekeller des Fuhrmanns Hofs, festlich geschmückt für den Weihnachtszauber.">
-</div>
+    <article id="herbstmarkt-2024">
+      <h2>Herbstmarkt 2024</h2>
+      <div class="gallery">
+        <!-- Bilder -->
+      </div>
+    </article>
 
-<div class="lightbox" id="img8">
-  <a href="#_" class="close"></a>
-      <img src="{{ '/images/galerie/08.webp' | url }}" alt="Der Innenhof bei Abendlicht – historische Mauern, stille Atmosphäre und Lichterketten.">
+    <article id="weihnachten-2024">
+      <h2>Weihnachten 2024</h2>
+      <div class="gallery">
+        <!-- Bilder -->
+      </div>
+    </article>
+
+    <article id="herbstmarkt-2025">
+      <h2>Herbstmarkt 2025</h2>
+      <div class="gallery">
+        <!-- Bilder -->
+      </div>
+    </article>
+
+    <!-- ===============================================
+     Veranstaltung: Weihnachten 2025 Test
+     =============================================== -->
+<article id="weihnachten-2025">
+  <h2>Weihnachten 2025</h2>
+  <p class="intro">
+    Der Beginn unserer kleinen Tradition: Adventslichter, Glühweinduft und erste weihnachtliche Impressionen im Hof.
+  </p>
+
+  <!-- 🔹 Galerie-Vorschau -->
+  <div class="gallery">
+    <!-- Bild 1 -->
+    <a href="#w22-img1">
+      <figure>
+        <img src="{{ '/images/galerie/weihnachten2022/01test.webp' | url }}" alt="Beispielbild Weihnachten 2022">
+        <figcaption>Festliche Beleuchtung im Innenhof</figcaption>
+      </figure>
+    </a>
+
+    <!-- Bild 2 -->
+    <a href="#w22-img2">
+      <figure>
+        <img src="{{ '/images/galerie/weihnachten2022/02test.webp' | url }}" alt="Beispielbild Weihnachten 2022">
+        <figcaption>Festliche Beleuchtung im Innenhof</figcaption>
+      </figure>
+    </a>
+
+    <!-- Bild 3 -->
+    <a href="#w22-img3">
+      <figure>
+        <img src="{{ '/images/galerie/weihnachten2022/03test.webp' | url }}" alt="Beispielbild Weihnachten 2022">
+        <figcaption>Festliche Beleuchtung im Innenhof</figcaption>
+      </figure>
+    </a>
+  </div>
+
+  <!-- 🔹 Lightboxen direkt unter der Galerie -->
+  <div class="lightbox" id="w22-img1">
+    <a href="#_" class="close"></a>
+    <img src="{{ '/images/galerie/weihnachten2022/01test.webp' | url }}" alt="Beispielbild Weihnachten 2022">
+  </div>
+
+  <div class="lightbox" id="w22-img2">
+    <a href="#_" class="close"></a>
+    <img src="{{ '/images/galerie/weihnachten2022/02test.webp' | url }}" alt="Beispielbild Weihnachten 2022">
+  </div>
+
+  <div class="lightbox" id="w22-img3">
+    <a href="#_" class="close"></a>
+    <img src="{{ '/images/galerie/weihnachten2022/03test.webp' | url }}" alt="Beispielbild Weihnachten 2022">
+  </div>
+</article>
+  </section>
 </div>
