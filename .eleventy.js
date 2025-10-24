@@ -13,7 +13,7 @@ export default function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/style.css");
   eleventyConfig.addPassthroughCopy("src/fonts");
   eleventyConfig.addPassthroughCopy("src/images");
-
+  
   // 2. BrowserSync beim Testen
   eleventyConfig.setBrowserSyncConfig({
     files: ['_site/**/*'],
