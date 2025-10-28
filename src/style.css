@@ -233,7 +233,7 @@ a:hover {
   max-width: 900px;
   margin: 0 auto 1rem auto;
   font-family: 'Quintessential-Regular', Georgia, serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #840202;
   line-height: 1.45;
   letter-spacing: 0.02em;
@@ -245,8 +245,8 @@ a:hover {
 /* Auf kleinen Bildschirmen (max. 768px Breite) */
 @media (max-width: 768px) {
   .announcement {
-    font-size: 0.6rem;  /* Kleinere Schrift */
-    padding: 0.5rem;     /* Weniger Padding */
+    font-size: 0.95rem;  /* Kleinere Schrift */
+    padding: 0.6rem;     /* Weniger Padding */
   }
 }
 /* ==========================================================

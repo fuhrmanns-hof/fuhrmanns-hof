@@ -233,7 +233,7 @@ a:hover {
   max-width: 900px;
   margin: 0 auto 1rem auto;
   font-family: 'Quintessential-Regular', Georgia, serif;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: #840202;
   line-height: 1.45;
   letter-spacing: 0.02em;
@@ -241,6 +241,13 @@ a:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2px);
   text-align: center;
+}
+/* Auf kleinen Bildschirmen (max. 768px Breite) */
+@media (max-width: 768px) {
+  .announcement {
+    font-size: 0.95rem;  /* Kleinere Schrift */
+    padding: 0.6rem;     /* Weniger Padding */
+  }
 }
 /* ==========================================================
    8) Content-Box (Milchglas)
