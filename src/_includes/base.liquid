@@ -5,25 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">
-<link rel="stylesheet" href="{{ '/style.css' | url }}">
+
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f5f1e9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#38322e" media="(prefers-color-scheme: dark)">
+
+  <link rel="stylesheet" href="{{ '/style.css' | url }}">
 </head>
 
-<body>
-  <div class="bg"></div>
+<body class="{{ page.fileSlug }}">
+  <div class="bg-fixed"></div>
 
   {% include "nav.html" %}
 
-{% if page.url == "/" or page.url == "/index/" or page.url == "/index.html" or page.filePathStem == "/src/index" %}
+  {% if page.url == "/" or page.url == "/index/" or page.url == "/index.html" or page.filePathStem == "/src/index" %}
   <div class="announcement">
     🎄✨ Am Wochenende des 4. Advents findet in Querfurt der <strong>Weihnachtszauber</strong> statt.  
     Auch der <strong>Fuhrmanns Hof</strong> öffnet seine Tore (am Freitag und Samstag) und ist Teil des festlichen Geschehens rund um Markt und Altstadt. 🕯️❄️
   </div>
-{% endif %}
+  {% endif %}
 
   <main>
     {{ content }}
   </main>
 
   {% include "footer.html" %}
+  <script src="{{ '/gallery.js' | url }}"></script>
 </body>
 </html>

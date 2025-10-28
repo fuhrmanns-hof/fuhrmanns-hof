@@ -2,14 +2,17 @@
 layout: base.liquid
 title: "Startseite"
 description: "Willkommen auf der privaten Informationsseite über den Fuhrmanns Hof in Querfurt."
+class: "home"
 ---
 
 <!-- stabiler, nicht mitscrollender Hintergrund -->
-<div class="bg"></div>
+<div class="bg-fixed"></div>
 
 <!-- Hauptinhalt -->
-<div class="welcome">
+<div class="content-box">
   <h1>Herzlich&nbsp;willkommen&nbsp;bei</h1>
-  <img src="{{ '/images/fuhrmanns_hof_logo.png' | url }}" alt="Logo Fuhrmanns Hof">
-  <h2>Schön, dass Sie hier sind!</h2>
+<img 
+  class="logo-home"
+  src="{{ '/images/fuhrmanns_hof_logo300.png' | url }}" 
+  alt="Logo Fuhrmanns Hof">
 </div>

@@ -5,11 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Startseite</title>
   <meta name="description" content="Willkommen auf der privaten Informationsseite über den Fuhrmanns Hof in Querfurt.">
-<link rel="stylesheet" href="/fuhrmanns-hof/style.css">
+
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f5f1e9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#38322e" media="(prefers-color-scheme: dark)">
+
+  <link rel="stylesheet" href="/fuhrmanns-hof/style.css">
 </head>
 
-<body>
-  <div class="bg"></div>
+<body class="">
+  <div class="bg-fixed"></div>
 
   <!-- ==========================================
      Navigationsleiste · Fuhrmanns Hof
@@ -22,23 +27,25 @@
   </div>
 </nav>
 
-
+  
   <div class="announcement">
     🎄✨ Am Wochenende des 4. Advents findet in Querfurt der <strong>Weihnachtszauber</strong> statt.  
     Auch der <strong>Fuhrmanns Hof</strong> öffnet seine Tore (am Freitag und Samstag) und ist Teil des festlichen Geschehens rund um Markt und Altstadt. 🕯️❄️
   </div>
-
+  
 
   <main>
     
 <!-- stabiler, nicht mitscrollender Hintergrund -->
-<div class="bg"></div>
+<div class="bg-fixed"></div>
 
 <!-- Hauptinhalt -->
-<div class="welcome">
+<div class="content-box">
   <h1>Herzlich&nbsp;willkommen&nbsp;bei</h1>
-  <img src="/fuhrmanns-hof/images/fuhrmanns_hof_logo.png" alt="Logo Fuhrmanns Hof">
-  <h2>Schön, dass Sie hier sind!</h2>
+<img 
+  class="logo-home"
+  src="/fuhrmanns-hof/images/fuhrmanns_hof_logo300.png" 
+  alt="Logo Fuhrmanns Hof">
 </div>
   </main>
 
@@ -51,5 +58,6 @@
     </div>
   </div>
 </footer>
+  <script src="/fuhrmanns-hof/gallery.js"></script>
 </body>
 </html>

@@ -5,11 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Galerie – Fuhrmanns Hof Querfurt</title>
   <meta name="description" content="Veranstaltungs-Galerie des Fuhrmanns Hof Querfurt – Bilder von Märkten und weihnachtlichen Momenten.">
-<link rel="stylesheet" href="/fuhrmanns-hof/style.css">
+
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f5f1e9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#38322e" media="(prefers-color-scheme: dark)">
+
+  <link rel="stylesheet" href="/fuhrmanns-hof/style.css">
 </head>
 
-<body>
-  <div class="bg"></div>
+<body class="galerie">
+  <div class="bg-fixed"></div>
 
   <!-- ==========================================
      Navigationsleiste · Fuhrmanns Hof
@@ -22,157 +27,175 @@
   </div>
 </nav>
 
-
+  
 
   <main>
     
 <div class="gallery-layout">
-  <!-- Seitenleiste -->
-  <aside class="gallery-sidebar">
-    <h2>Veranstaltungen</h2>
-    <ul>
-      <li><a href="#weihnachten-2022">Weihnachtszauber 2022</a></li>
-      <li><a href="#weihnachten-2023">Weihnachten 2023</a></li>
-      <li><a href="#herbstmarkt-2024">Herbstmarkt 2024</a></li>
-      <li><a href="#weihnachten-2024">Weihnachtszauber 2024</a></li>
-      <li><a href="#herbstmarkt-2025">Herbstmarkt 2025</a></li>
-      <li><a href="#weihnachten-2025">Weihnachtszauber 2025</a></li>
-    </ul>
-  </aside>
+<!-- Seitenleiste -->
+<aside class="gallery-sidebar">
+  <h3>Veranstaltungen</h3>
+  <ul>
+    <li><a href="#weihnachten-2022">Weihnachtszauber 2022</a></li>
+    <li><a href="#weihnachten-2023">Weihnachtszauber 2023</a></li>
+    <li><a href="#herbstmarkt-2024">Herbstmarkt 2024</a></li>
+    <li><a href="#weihnachten-2024">Weihnachtszauber 2024</a></li>
+    <li><a href="#herbstmarkt-2025">Herbstmarkt 2025</a></li>
+    <li><a href="#weihnachten-2025">Weihnachtszauber 2025</a></li>
+  </ul>
+</aside>
 
-  <!-- Hauptinhalt -->
-  <section class="gallery-content">
-    <div class="welcome">
-      <h3>Ein Blick in und um den <strong>Fuhrmanns Hof Querfurt</strong> – Veranstaltungen, Märkte und festliche Momente.</h3>
-    </div>
+<!-- Hauptinhalt -->
+<section class="gallery-content">
+    <h2>Ein Blick in und um den Fuhrmanns Hof Querfurt – Veranstaltungen, Märkte und festliche Momente.</h2>
+  <!-- Mobiles Dropdown -->
+  <div class="gallery-mobile-controls">
+    <select class="gallery-dropdown" id="eventDropdown">
+      <option value="">– Veranstaltung wählen –</option>
+      <option value="#weihnachten-2022">Weihnachtszauber 2022</option>
+      <option value="#weihnachten-2023">Weihnachtszauber 2023</option>
+      <option value="#herbstmarkt-2024">Herbstmarkt 2024</option>
+      <option value="#weihnachten-2024">Weihnachtszauber 2024</option>
+      <option value="#herbstmarkt-2025">Herbstmarkt 2025</option>
+      <option value="#weihnachten-2025">Weihnachtszauber 2025</option>
+    </select>
+  </div>
 
 <!-- ===============================================
-     Veranstaltung: Weihnachten 2022
+     Veranstaltung: Weihnachtszauber 2022
      =============================================== -->
 <article id="weihnachten-2022">
-  <h2>Weihnachten 2022</h2>
+  <h3>Weihnachtszauber 2022</h3>
   <p class="intro">
     Der Beginn unserer kleinen Tradition: Adventslichter, Glühweinduft und erste weihnachtliche Impressionen im Hof.
   </p>
 
-  <!-- 🔹 Galerie-Vorschau -->
   <div class="gallery">
-    <!-- Bild 1 -->
-    <a href="#w22-img1">
+    <a href="/fuhrmanns-hof/images/galerie/weihnachten2022/01test.webp">
       <figure>
-        <img src="/fuhrmanns-hof/images/galerie/weihnachten2022/01test.webp" alt="Beispielbild">
+        <img src="/fuhrmanns-hof/images/galerie/weihnachten2022/01test.webp" alt="Weihnachtszauber 2022">
+        <figcaption>Beispielbild, das eine kleine Beschreibung hat</figcaption>
+      </figure>
+    </a>
+
+    <a href="/fuhrmanns-hof/images/galerie/weihnachten2022/02test.webp">
+      <figure>
+        <img src="/fuhrmanns-hof/images/galerie/weihnachten2022/02test.webp" alt="Weihnachtszauber 2022">
         <figcaption>Beispielbild</figcaption>
       </figure>
     </a>
 
-    <!-- Bild 2 -->
-    <a href="#w22-img2">
+    <a href="/fuhrmanns-hof/images/galerie/weihnachten2022/03test.webp">
       <figure>
-        <img src="/fuhrmanns-hof/images/galerie/weihnachten2022/02test.webp" alt="Beispielbild">
+        <img src="/fuhrmanns-hof/images/galerie/weihnachten2022/03test.webp" alt="Weihnachtszauber 2022">
         <figcaption>Beispielbild</figcaption>
       </figure>
     </a>
-
-    <!-- Bild 3 -->
-    <a href="#w22-img3">
-      <figure>
-        <img src="/fuhrmanns-hof/images/galerie/weihnachten2022/03test.webp" alt="Beispielbild">
-        <figcaption>Beispielbild</figcaption>
-      </figure>
-    </a>
-  </div>
-
-  <!-- 🔹 Lightboxen direkt unter der Galerie -->
-  <div class="lightbox" id="w22-img1">
-    <a href="#_" class="close"></a>
-    <img src="/fuhrmanns-hof/images/galerie/weihnachten2022/01test.webp" alt="Beispielbild">
-  </div>
-
-  <div class="lightbox" id="w22-img2">
-    <a href="#_" class="close"></a>
-    <img src="/fuhrmanns-hof/images/galerie/weihnachten2022/02test.webp" alt="Beispielbild">
-  </div>
-
-  <div class="lightbox" id="w22-img3">
-    <a href="#_" class="close"></a>
-    <img src="/fuhrmanns-hof/images/galerie/weihnachten2022/03test.webp" alt="Beispielbild">
   </div>
 </article>
 
-    <article id="weihnachten-2023">
-      <h2>Weihnachten 2023</h2>
-      <div class="gallery">
-        <!-- deine vorhandenen Weihnachtsbilder 2023 hier einfügen -->
-      </div>
-    </article>
+<!-- ===============================================
+     Veranstaltung: Weihnachtszauber 2023
+     =============================================== -->
+<article id="weihnachten-2023">
+  <h3>Weihnachtszauber 2023</h3>
+  <p class="intro">
+    Auch 2023 haben wir den Advent mit festlicher Stimmung, Leckereien und schönen Momenten gefeiert.
+  </p>
 
-    <article id="herbstmarkt-2024">
-      <h2>Herbstmarkt 2024</h2>
-      <div class="gallery">
-        <!-- Bilder -->
-      </div>
-    </article>
+  <div class="gallery">
+    <!-- Hier später echte Bilder einfügen -->
+    <p style="padding: 2rem; text-align: center; color: #999;">
+      Bilder folgen in Kürze
+    </p>
+  </div>
+</article>
 
-    <article id="weihnachten-2024">
-      <h2>Weihnachten 2024</h2>
-      <div class="gallery">
-        <!-- Bilder -->
-      </div>
-    </article>
+<!-- ===============================================
+     Veranstaltung: Herbstmarkt 2024
+     =============================================== -->
+<article id="herbstmarkt-2024">
+  <h3>Herbstmarkt 2024</h3>
+  <p class="intro">
+    Buntes Herbstlaub, regionale Köstlichkeiten und handwerkliche Schätze – unser erster Herbstmarkt.
+  </p>
 
-    <!-- ===============================================
-     Veranstaltung: Herbstmarkt 2025 Test
+  <div class="gallery">
+    <!-- Hier später echte Bilder einfügen -->
+    <p style="padding: 2rem; text-align: center; color: #999;">
+      Bilder folgen in Kürze
+    </p>
+  </div>
+</article>
+
+<!-- ===============================================
+     Veranstaltung: Weihnachtszauber 2024
+     =============================================== -->
+<article id="weihnachten-2024">
+  <h3>Weihnachtszauber 2024</h3>
+  <p class="intro">
+    Lichterglanz und vorweihnachtliche Vorfreude – ein stimmungsvoller Ausklang des Jahres.
+  </p>
+
+  <div class="gallery">
+    <!-- Hier später echte Bilder einfügen -->
+    <p style="padding: 2rem; text-align: center; color: #999;">
+      Bilder folgen in Kürze
+    </p>
+  </div>
+</article>
+
+<!-- ===============================================
+     Veranstaltung: Herbstmarkt 2025
      =============================================== -->
 <article id="herbstmarkt-2025">
-  <h2>Herbstmarkt 2025</h2>
+  <h3>Herbstmarkt 2025</h3>
   <p class="intro">
-    Der Beginn unserer kleinen Tradition: Adventslichter, Glühweinduft und erste weihnachtliche Impressionen im Hof.
+    Herbstliche Impressionen vom Fuhrmanns Hof – Farben, Düfte und gemütliches Beisammensein.
   </p>
 
-  <!-- 🔹 Galerie-Vorschau -->
   <div class="gallery">
-    <!-- Bild 1 -->
-    <a href="#h25-img1">
+    <a href="/fuhrmanns-hof/images/galerie/herbstmarkt2025/01test.webp">
       <figure>
-        <img src="/fuhrmanns-hof/images/galerie/herbstmarkt2025/01test.webp" alt="Beispielbild">
-        <figcaption>Beispielbild</figcaption>
+        <img src="/fuhrmanns-hof/images/galerie/herbstmarkt2025/01test.webp" alt="Herbstmarkt 2025">
+        <figcaption>Herbststimmung am Hof</figcaption>
       </figure>
     </a>
 
-    <!-- Bild 2 -->
-    <a href="#h25-img2">
+    <a href="/fuhrmanns-hof/images/galerie/herbstmarkt2025/02test.webp">
       <figure>
-        <img src="/fuhrmanns-hof/images/galerie/herbstmarkt2025/02test.webp" alt="Beispielbild">
-        <figcaption>Beispielbild</figcaption>
+        <img src="/fuhrmanns-hof/images/galerie/herbstmarkt2025/02test.webp" alt="Herbstmarkt 2025">
+        <figcaption>Markttreiben im Herbst</figcaption>
       </figure>
     </a>
 
-    <!-- Bild 3 -->
-    <a href="#h25-img3">
+    <a href="/fuhrmanns-hof/images/galerie/herbstmarkt2025/03test.webp">
       <figure>
-        <img src="/fuhrmanns-hof/images/galerie/herbstmarkt2025/03test.webp" alt="Beispielbild">
-        <figcaption>Beispielbild</figcaption>
+        <img src="/fuhrmanns-hof/images/galerie/herbstmarkt2025/03test.webp" alt="Herbstmarkt 2025">
+        <figcaption>Gemütliche Atmosphäre</figcaption>
       </figure>
     </a>
-  </div>
-
-  <!-- 🔹 Lightboxen direkt unter der Galerie -->
-  <div class="lightbox" id="h25-img1">
-    <a href="#_" class="close"></a>
-    <img src="/fuhrmanns-hof/images/galerie/herbstmarkt2025/01test.webp" alt="Beispielbild Weihnachten 2022">
-  </div>
-
-  <div class="lightbox" id="h25-img2">
-    <a href="#_" class="close"></a>
-    <img src="/fuhrmanns-hof/images/galerie/herbstmarkt2025/02test.webp" alt="Beispielbild Weihnachten 2022">
-  </div>
-
-  <div class="lightbox" id="h25-img3">
-    <a href="#_" class="close"></a>
-    <img src="/fuhrmanns-hof/images/galerie/herbstmarkt2025/03test.webp" alt="Beispielbild Weihnachten 2022">
   </div>
 </article>
-  </section>
+
+<!-- ===============================================
+     Veranstaltung: Weihnachtszauber 2025
+     =============================================== -->
+<article id="weihnachten-2025">
+  <h3>Weihnachtszauber 2025</h3>
+  <p class="intro">
+    Die Vorfreude steigt – bald öffnen wir wieder unsere Tore für den Weihnachtszauber!
+  </p>
+
+  <div class="gallery">
+    <!-- Hier später echte Bilder einfügen -->
+    <p style="padding: 2rem; text-align: center; color: #999;">
+      Bilder folgen nach der Veranstaltung
+    </p>
+  </div>
+</article>
+
+</section>
 </div>
   </main>
 
@@ -185,5 +208,6 @@
     </div>
   </div>
 </footer>
+  <script src="/fuhrmanns-hof/gallery.js"></script>
 </body>
 </html>
